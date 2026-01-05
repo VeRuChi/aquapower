@@ -45,9 +45,17 @@
     border-radius: 4px;
 }
 
-.object:hover {
+.aavd:hover {
     transform: translate(20px, 20px);
     box-shadow: -20px -20px 0 0 rgba(128, 128, 128, 0.6);
+}
+.ravd:hover {
+    transform: translate(20px, 20px);
+    box-shadow: 0 -20px 0 0 rgba(128, 128, 128, 0.6);
+}
+.rrvd:hover {
+    transform: translate(20px, 20px);
+    box-shadow: 20px 20px 0 0 rgba(128, 128, 128, 0.6);
 }
 
 .object-image{
@@ -95,3 +103,4 @@
         margin: 10px;
     }
 }
+
