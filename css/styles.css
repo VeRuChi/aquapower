@@ -76,14 +76,14 @@
         gap: 20px;
         padding: 0 10px;
     }
-    .object{
+    .choose a{
         display: inline-flex;
         flex-direction: row;
         align-items: center;
         gap: 20px;
         padding: 10px 0;
-        width: 100%;
-    }
+        width: 100%;}
+    
     .header-title h1 {
         font-size: 1.2rem;
     }
@@ -93,4 +93,5 @@
         width: 100%;
         margin: 10px;
     }
+
 }
