@@ -80,7 +80,7 @@
         flex-direction: row;
         align-items: center;
         gap: 20px;
-        width: 100%;
+        min-width: 99,9%;
     
     .object:hover {
     transform: translate(10px, 10px);
@@ -97,4 +97,5 @@
     }
 
 }
+
 
