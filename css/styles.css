@@ -38,24 +38,19 @@
     width: 30%;
 }
 
-.object {
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 4px;
+#aavd:hover {
+    transform: translateX(10px); 
+    box-shadow: -8px 0px 0px 0px rgba(128, 128, 128, 0.5);
 }
 
-.object .aavd:hover {
-    transform: translate(20px, 20px);
-    box-shadow: -20px -20px 0 0 rgba(128, 128, 128, 0.6);
+#ravd:hover {
+    transform: translateY(10px); 
+    box-shadow: 0px -8px 0px 0px rgba(128, 128, 128, 0.5);
 }
-.object .ravd:hover {
-    transform: translate(20px, 20px);
-    box-shadow: 0 -20px 0 0 rgba(128, 128, 128, 0.6);
-}
-.object .rrvd:hover {
-    transform: translate(20px, 20px);
-    box-shadow: 20px 20px 0 0 rgba(128, 128, 128, 0.6);
+
+#rrvd:hover {
+    transform: translateX(-10px); 
+    box-shadow: 8px 0px 0px 0px rgba(128, 128, 128, 0.5);
 }
 
 .object-image{
@@ -70,6 +65,7 @@
     gap: 20px;
     display: block;
     height: auto;
+    border-radius: 8px;
 }
 
 @media (max-width: 768px) {
@@ -84,7 +80,11 @@
         gap: 20px;
         padding: 0 10px;
     }
-
+    .object:click {
+    transform: translate(10px, 10px);
+    box-shadow: -10px -10px 0 0 rgba(128, 128, 128, 0.6);
+    }
+    
     .choose a{
         display: inline-flex;
         flex-direction: row;
@@ -103,5 +103,6 @@
         margin: 10px;
     }
 }
+
 
 
