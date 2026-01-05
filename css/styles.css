@@ -3,14 +3,11 @@
     padding: 0;
     font-family: sans-serif;
 }
-body{
-    max-width: 1440px
-}
 .main-menu {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;           
+    flex-direction: column; /* Выстраиваем в линию */
+    align-items: center; /* Центрируем лого и текст по вертикали */
+    gap: 20px;           /* Расстояние между логотипом и текстом */
     padding: 10px;
     width: 100%;
     text-align: center;
@@ -24,7 +21,6 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
 }
 .choose{
     display: flex;
@@ -41,17 +37,17 @@ body{
     padding: 10px 0;
     width: 30%;
 }
-/* Базовые стили для контейнера объекта */
+
 .object {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавность анимации */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     cursor: pointer;
-    overflow: hidden; /* Чтобы картинка не выходила за края, если есть скругления */
-    border-radius: 4px; /* Опционально: небольшое скругление углов */
+    overflow: hidden;
+    border-radius: 4px;
 }
 
 .object:hover {
-    transform: translate(-4px, -4px); 
-    box-shadow: 4px 4px 0px 0px rgba(128, 128, 128, 0.6); 
+    transform: translate(20px, 20px);
+    box-shadow: -20px -20px 0 0 rgba(128, 128, 128, 0.6);
 }
 
 .object-image{
@@ -66,7 +62,6 @@ body{
     gap: 20px;
     display: block;
     height: auto;
-    border-radius: 8px;
 }
 
 @media (max-width: 768px) {
@@ -81,12 +76,7 @@ body{
         gap: 20px;
         padding: 0 10px;
     }
-    .object:click {
-    transition: transform 0.3s ease, box-shadow 0.3s ease
-    transform: translate(10px, 10px);
-    box-shadow: -10px -10px 0 0 rgba(128, 128, 128, 0.6);
-    }
-    
+
     .choose a{
         display: inline-flex;
         flex-direction: row;
@@ -105,10 +95,3 @@ body{
         margin: 10px;
     }
 }
-
-
-
-
-
-
-
