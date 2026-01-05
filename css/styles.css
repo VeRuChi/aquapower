@@ -3,6 +3,9 @@
     padding: 0;
     font-family: sans-serif;
 }
+body{
+    max-width: 1440px
+}
 .main-menu {
     display: flex;
     flex-direction: column;
@@ -21,6 +24,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
 }
 .choose{
     display: flex;
@@ -37,21 +41,25 @@
     padding: 10px 0;
     width: 30%;
 }
+.object{
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+    border-radius: 8px;
+}
 
 #aavd:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease
+    
     transform: translateX(10px); 
     box-shadow: -20px 10px 0px 0px rgba(128, 128, 128, 0.5);
 }
 
 #ravd:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease
+    
     transform: translateY(10px) ; 
     box-shadow: 0 20px 0px 0px rgba(128, 128, 128, 0.5);
 }
 
 #rrvd:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease
+    
     transform: translateX(-10px); 
     box-shadow: 20px 10px 0px 0px rgba(128, 128, 128, 0.5);
 }
@@ -107,6 +115,7 @@
         margin: 10px;
     }
 }
+
 
 
 
