@@ -41,27 +41,17 @@ body{
     padding: 10px 0;
     width: 30%;
 }
-#aavd #ravd #rrvd{
-    transition: transform 0.3s ease, box-shadow 0.3s ease
-    
+/* Базовые стили для контейнера объекта */
+.object {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавность анимации */
+    cursor: pointer;
+    overflow: hidden; /* Чтобы картинка не выходила за края, если есть скругления */
+    border-radius: 4px; /* Опционально: небольшое скругление углов */
 }
 
-#aavd:hover {
-    
-    transform: translateX(10px); 
-    box-shadow: -20px 10px 0px 0px rgba(128, 128, 128, 0.5);
-}
-
-#ravd:hover {
-    
-    transform: translateY(10px) ; 
-    box-shadow: 0 20px 0px 0px rgba(128, 128, 128, 0.5);
-}
-
-#rrvd:hover {
-    
-    transform: translateX(-10px); 
-    box-shadow: 20px 10px 0px 0px rgba(128, 128, 128, 0.5);
+.object:hover {
+    transform: translate(-4px, -4px); 
+    box-shadow: 4px 4px 0px 0px rgba(128, 128, 128, 0.6); 
 }
 
 .object-image{
@@ -115,6 +105,7 @@ body{
         margin: 10px;
     }
 }
+
 
 
 
